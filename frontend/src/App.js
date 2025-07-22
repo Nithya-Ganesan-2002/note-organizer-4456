@@ -11,11 +11,15 @@ function genId() {
   return Math.random().toString(36).substring(2, 12) + Date.now();
 }
 
-// Demo initial folders/tags
+/**
+ * Demo initial folders/tags
+ * Now includes a default "Travel" folder for note organization.
+ */
 const DEFAULT_FOLDERS = [
   { id: "all", name: "All Notes" },
   { id: "personal", name: "Personal" },
-  { id: "work", name: "Work" }
+  { id: "work", name: "Work" },
+  { id: "travel", name: "Travel" }
 ];
 
 // PUBLIC_INTERFACE
